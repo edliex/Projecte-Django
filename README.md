@@ -25,4 +25,5 @@ Si hem fet canvis per la base de dades haurem de fer les migracions 'python mana
 Pydocs:
 
 Views.py: https://edliex.github.io/Projecte-Django/blog.views.html
+
 Models.py: https://edliex.github.io/Projecte-Django/blog.models.html
