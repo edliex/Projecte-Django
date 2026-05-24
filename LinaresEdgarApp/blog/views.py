@@ -7,9 +7,9 @@ def starting_page(request):
     """
     Renderitza la pàgina principal amb els darrers tres posts publicats.
 
-    Args:
+    Atributs:
         request (HttpRequest): L'objecte de la petició de Django.
-    Returns:
+    Retorna:
         HttpResponse: La pàgina index.html amb el context dels posts recents.
     """
     try:
@@ -24,9 +24,9 @@ def posts(request):
     """
     Mostra un llistat complet de totes les publicacions del blog.
 
-    Args:
+    Atributs:
         request (HttpRequest): L'objecte de la petició de Django.
-    Returns:
+    Retorna:
         HttpResponse: La pàgina posts.html amb tots els objectes Posts.
     """
     try:        
@@ -41,10 +41,10 @@ def post_detail(request, slug):
     """
     Mostra el contingut detallat d'un post específic segons el seu slug.
 
-    Args:
+    Atributs:
         request (HttpRequest): L'objecte de la petició de Django.
         slug (str): L'identificador únic del post que es vol visualitzar.
-    Returns:
+    Retorna:
         HttpResponse: La pàgina post_detail.html amb les dades del post.
 
     """
