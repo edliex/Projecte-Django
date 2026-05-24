@@ -9,9 +9,15 @@ Instal·lació ràpida:
 2. Hem de preparar un entorn virtual en una carpeta amb la comanda 'python -m venv env_site'
 3. Ara activem l'entor virtual amb la comanda '.\env_site\Scripts\activate.ps1'
 4. Despres instal·lem les depencencies 'pip install django'
-5. Per ultim descomprimim el zip en la mateixa carpeta
+5. Tambe les depencencies 'pip install pillow'
+6. Per ultim descomprimim el zip en la mateixa carpeta
 
+Activar Django:
 
-Instalar Django
-Instalar Pillow
-   
+1. Entrem a la carpeta on es troba el projecte
+2. En el terminal i fiquem 'python manage.py runserver' per activar la aplicacio web
+3. Podrem accedir a traves de 'http://127.0.0.1:8000'
+
+Migracions:
+
+Si hem fet canvis per la base de dades haurem de fer les migracions 'python manage.py makemigrations' i despres 'python manage,py migrate'
