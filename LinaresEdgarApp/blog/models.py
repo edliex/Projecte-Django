@@ -6,7 +6,7 @@ class Posts(models.Model):
     """
     Representa una entrada del blog.
 
-    Attributes:
+    Atributs:
         title (str): El títol del post.
         content (str): El contingut de l'article.
         image (ImageField): Imatge opcional associada a la publicació.
@@ -34,7 +34,7 @@ class Autors(models.Model):
     """
     Representa un autor del blog amb la seva informació de contacte.
 
-    Attributes:
+    Atributs:
         nom (str): Nom de l'autor.
         cognom (str): Cognom de l'autor.
         adreça (str): Correu electrònic de contacte.
@@ -61,7 +61,7 @@ class Tag(models.Model):
     """
     Representa etiquetes per classificar les publicacions.
 
-    Attributes:
+    Atributs:
         nom_tag (str): Nom de l'etiqueta.
         slug (str):  Identificador generat a partir del tag.
     """
