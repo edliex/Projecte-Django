@@ -19,6 +19,7 @@ Migracions:
   Si hem fet canvis per la base de dades haurem de fer les migracions 'python manage.py makemigrations' i despres 'python manage,py migrate'
 
 Pydocs:
+
   Views.py: https://edliex.github.io/Projecte-Django/blog.views.html
   
   Models.py: https://edliex.github.io/Projecte-Django/blog.models.html
