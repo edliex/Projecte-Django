@@ -20,4 +20,5 @@ Migracions:
 
 Pydocs:
   Views.py: https://edliex.github.io/Projecte-Django/blog.views.html
+  
   Models.py: https://edliex.github.io/Projecte-Django/blog.models.html
