@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block page_title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <article class="detailed-post">
+        <div class="detail-body">
+            <h1>{{ post.title }}</h1>
+            <p class="post-date">Publicat el {{ post.published_date|date:"d M Y" }}</p>
+            <hr>
+            {% if post.image %}
+                <img src="{{post.image.url}}" alt="{{post.title}}" class="post-image">
+            {% endif %}
+            <div class="post-text">
+                {{ post.content|linebreaks }}
+            </div>
+        </div>
+    </article>
+{% endblock %}

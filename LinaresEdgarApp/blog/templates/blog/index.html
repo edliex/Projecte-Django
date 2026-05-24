@@ -1,11 +1,28 @@
-{% extends 'blog/base.html' %}
+{% extends 'base.html' %}
 
 {% block page_title %}
     Blogs Pagina Principal
 {% endblock %}
 
 {% block content %}
-    <h1> Blogs Pagina Principal </h1>
-    <h3>Benvingut a Tonto</h3>
-
+    <div class="main-info">
+        <h1>Benvingut al RA6 de Programacio</h1>
+        <a>Aquest es el projecte d'aprenentatge basat en Django</a>
+    </div>
+    <div class="last-posts">
+        <h1>Darrers Posts</h1>
+        <div class="posts-container">
+            {% for post in posts %}
+                    <a href="{% url 'post-detail' post.slug %}" class="post-link">
+                        <div class="post-preview">
+                            {% if post.image %}
+                                <img src="{{post.image.url}}" alt="{{post.title}}" class="preview-image">
+                            {% endif %}
+                            <h3>{{post.title}}</h3>
+                            <p>{{post.content|truncatechars:100}}</p>
+                        </div>
+                    </a>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
