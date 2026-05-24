@@ -24,7 +24,7 @@ jobs:
       - name: Generar HTML amb Pydoc
         run: |
           mkdir docs
-          python -m pydoc -w ./
+          python -m pydoc -w ./LinaresEdgarApp/blog/*.py
           mv *.html docs/
 
       - name: Deploy a GitHub Pages
