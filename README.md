@@ -8,8 +8,8 @@ Instal·lació ràpida:
 1. Primer ens hem de descarregar els arxius en .zip
 2. Hem de preparar un entorn virtual en una carpeta amb la comanda 'python -m venv env_site'
 3. Ara activem l'entor virtual amb la comanda '.\env_site\Scripts\activate.ps1'
-4. Despres instal·lem les depencencies 'pip install django'
-5. Tambe les depencencies 'pip install pillow'
+4. Despres instal·lem les depencencies 'python -m pip install django'
+5. Tambe les depencencies 'python -m pip install Pillow'
 6. Per ultim descomprimim el zip en la mateixa carpeta
 
 Activar Django:
