@@ -16,10 +16,8 @@ Activar Django:
   3. Podrem accedir a traves de 'http://127.0.0.1:8000'
 
 Migracions:
-  Si hem fet canvis per la base de dades haurem de fer les migracions 'python manage.py makemigrations' i despres 'python manage,py migrate'
+  1. Si hem fet canvis per la base de dades haurem de fer les migracions 'python manage.py makemigrations' i despres 'python manage,py migrate'
 
 Pydocs:
-
-  Views.py: https://edliex.github.io/Projecte-Django/blog.views.html
-  
-  Models.py: https://edliex.github.io/Projecte-Django/blog.models.html
+  1. Views.py: https://edliex.github.io/Projecte-Django/blog.views.html
+  2. Models.py: https://edliex.github.io/Projecte-Django/blog.models.html
