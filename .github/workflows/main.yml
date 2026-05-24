@@ -27,9 +27,8 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: |
           mkdir docs
-          python -m pydoc -w ./LinaresEdgarApp/blog/models.py || true
-          python -m pydoc -w ./LinaresEdgarApp/blog/views.py || true
-          mv *.html docs/ || true
+          python -c "import django; django.setup(); import pydoc; pydoc.writedoc('LinaresEdgarApp.blog.models'); pydoc.writedoc('LinaresEdgarApp.blog.views')"
+          mv *.html docs/
 
       - name: Deploy a GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
