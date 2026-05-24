@@ -22,14 +22,14 @@ jobs:
           pip install django Pillow
 
       - name: Generar HTML amb Pydoc
-        env:
-          DJANGO_SETTINGS_MODULE: LinaresEdgarApp.LinaresEdgarApp.settings
-          PYTHONPATH: ${{ github.workspace }}
         run: |
-          mkdir docs
-          python -c "import django; django.setup(); import pydoc; pydoc.writedoc('LinaresEdgarApp.blog.models'); pydoc.writedoc('LinaresEdgarApp.blog.views')"
-          mv *.html docs/
-
+          mkdir -p docs
+          cd LinaresEdgarApp
+          export DJANGO_SETTINGS_MODULE=LinaresEdgarApp.settings
+          export PYTHONPATH=$PWD
+          python -c "import django; django.setup(); import pydoc; pydoc.writedoc('blog.models'); pydoc.writedoc('blog.views')"
+          mv *.html ../docs/
+          
       - name: Deploy a GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
