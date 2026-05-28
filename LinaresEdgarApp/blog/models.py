@@ -41,6 +41,8 @@ class Post(models.Model):
         contingut (str): El contingut de l'article.
         imatge (ImageField): Imatge opcional associada a la publicació.
         data_publicacio (datetime): Data de publicació generada automàticament.
+        autor (Autor): Clau forana a l'autor de la publicació. Pot ser nul.
+        tags (Tag): Relació molts a molts amb les etiquetes de la publicació.
         slug (str): Identificador amigable per a URLs, únic i indexat.
     """
     titol = models.CharField(max_length=50, validators=[MinLengthValidator(5, message="El títol ha de tenir almenys 5 lletres.")])
