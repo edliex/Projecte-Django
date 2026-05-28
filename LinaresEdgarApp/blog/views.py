@@ -48,22 +48,58 @@ def post_detail(request, slug):
     })
 
 def authors_list(request):
+    """
+    Mostra un llistat complet de tots els autors registrats al blog.
+
+    Args:
+        request (HttpRequest): L'objecte de la petició de Django.
+    Returns:
+        HttpResponse: La pàgina autors.html amb totes les dades de Autor.
+    """
     autors = Autor.objects.all()
     return render(request, "blog/autors.html", {
         "autors": autors
     })
 
 def author_detail(request, id):
+    """
+    Mostra els detalls d'un autor específic segons el seu identificador.
+
+    Args:
+        request (HttpRequest): L'objecte de la petició de Django.
+        id (int): L'identificador únic de l'autor.
+    Returns:
+        HttpResponse: La pàgina autor_detail.html amb les dades de l'autor.
+    """
     autor = get_object_or_404(Autor, id=id)
     return render(request, "blog/autor_detail.html",{
         "autor": autor
     })
+
 def tag_list(request):
+    """
+    Mostra un llistat de totes les etiquetes (tags) utilitzades al blog.
+
+    Args:
+        request (HttpRequest): L'objecte de la petició de Django.
+    Returns:
+        HttpResponse: La pàgina tags.html amb tots els objectes Tag.
+    """
     tags = Tag.objects.all()
     return render(request, 'blog/tags.html',{
         "tags": tags
     })
+
 def tag_detail(request, id):
+    """
+    Mostra el detall d'una etiqueta específica segons el seu identificador.
+
+    Args:
+        request (HttpRequest): L'objecte de la petició de Django.
+        id (int): L'identificador únic (clau primària) de l'etiqueta.
+    Returns:
+        HttpResponse: La pàgina tag_detail.html amb les dades de l'etiqueta.
+    """
     tag = get_object_or_404(Tag, id=id)
     return render(request, "blog/tag_detail.html",{
         "tag": tag
