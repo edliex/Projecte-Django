@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block page_title %}
+    Tots els Tags
+{% endblock %}
+
+{% block content %}
+    <div class="tags">
+        <h1>Tots Els Tags</h1>
+        {% for tag in tags %}
+            <a href="{% url 'tag-detail' tag.id %}">
+                <span class="tag">{{ tag.nom_tag }}</span>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

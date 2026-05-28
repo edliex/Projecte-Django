@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
 
 {% block page_title %}
-    Tots els Posts
+    {{ tag.nom_tag }}
 {% endblock %}
 
 {% block content %}
     <div class="last-posts">
-        <h1>Tots els Posts del Blog</h1>
-        
+        <h1>Posts amb el tag: <a href="{% url 'tags-page' %}" class="tag-return">{{tag.nom_tag}}</a></h1>
         <div class="posts-container">
-            {% for post in posts %}
+            {% for post in tag.posts.all %}
                 <a href="{% url 'post-detail' post.slug %}" class="post-link">
                     <div class="post-preview">
                         {% if post.imatge %}

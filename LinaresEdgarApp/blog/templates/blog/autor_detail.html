@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 
 {% block page_title %}
-    Tots els Posts
+    {{ autor.nom }}
 {% endblock %}
 
 {% block content %}
-    <div class="last-posts">
-        <h1>Tots els Posts del Blog</h1>
+    <article class="detailed-post">
+        <div class="detail-body">
+            <h1>Detalls Del Autor</h1>
+            <p><strong>Nom: </strong>{{autor.nom}}</p>
+            <p><strong>Cognom: </strong>{{autor.cognom}}</p>            
+            <p><strong>Adreça: </strong>{{autor.adreça}}</p>            
+        </div>
+        <div class="last-posts">
+        <h1>Posts publicats per {{autor.nom}} {{autor.cognom}}: {{autor.nombre_posts}}</h1>
         
         <div class="posts-container">
-            {% for post in posts %}
+            {% for post in autor.posts.all %}
                 <a href="{% url 'post-detail' post.slug %}" class="post-link">
                     <div class="post-preview">
                         {% if post.imatge %}
@@ -24,4 +31,5 @@
             {% endfor %}
         </div>
     </div>
+    </article>
 {% endblock %}

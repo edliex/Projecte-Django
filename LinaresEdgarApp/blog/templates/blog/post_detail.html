@@ -1,21 +1,33 @@
 {% extends 'base.html' %}
 
 {% block page_title %}
-    {{ post.title }}
+    {{ post.titol }}
 {% endblock %}
 
 {% block content %}
     <article class="detailed-post">
         <div class="detail-body">
-            <h1>{{ post.title }}</h1>
-            <p class="post-date">Publicat el {{ post.published_date|date:"d M Y" }}</p>
+            <h1>{{ post.titol }}</h1>
+            <p class="post-date">Publicat el {{ post.data_publicacio|date:"d M Y" }} <strong>-</strong>
+                {% if post.autor %}
+                    <a href="{% url 'author-detail' post.autor.id %}" class="autor-link"> {{post.autor}}</a>
+                {% endif %}    
+            </p>
             <hr>
-            {% if post.image %}
-                <img src="{{post.image.url}}" alt="{{post.title}}" class="post-image">
+            {% if post.imatge %}
+                <img src="{{post.imatge.url}}" alt="{{post.titol}}" class="post-image">
             {% endif %}
             <div class="post-text">
-                {{ post.content|linebreaks }}
+                {{ post.contingut|linebreaks }}
             </div>
         </div>
     </article>
+    <div class="tags">
+        <h1>Etiquetes</h1>
+        {% for tag in post.tags.all %}
+            <a href="{% url 'tag-detail' tag.id %}">
+                <span class="tag">{{ tag.nom_tag }}</span>
+            </a>
+        {% endfor %}
+    </div>
 {% endblock %}

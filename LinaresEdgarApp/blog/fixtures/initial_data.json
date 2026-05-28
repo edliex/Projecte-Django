@@ -1,0 +1,277 @@
+[
+    {
+        "model": "blog.autor",
+        "pk": 1,
+        "fields": {
+            "nom": "John",
+            "cognom": "Doe",
+            "adreça": "john@example.com"
+        }
+    },
+    {
+        "model": "blog.autor",
+        "pk": 2,
+        "fields": {
+            "nom": "Jane",
+            "cognom": "Smith",
+            "adreça": "jane@example.com"
+        }
+    },
+    {
+        "model": "blog.autor",
+        "pk": 3,
+        "fields": {
+            "nom": "Alice",
+            "cognom": "Johnson",
+            "adreça": "alice@example.com"
+        }
+    },
+    {
+        "model": "blog.autor",
+        "pk": 4,
+        "fields": {
+            "nom": "Bob",
+            "cognom": "Brown",
+            "adreça": "bob@example.com"
+        }
+    },
+    {
+        "model": "blog.autor",
+        "pk": 5,
+        "fields": {
+            "nom": "Charlie",
+            "cognom": "Davis",
+            "adreça": "charlie@example.com"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 1,
+        "fields": {
+            "nom_tag": "django"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 2,
+        "fields": {
+            "nom_tag": "python"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 3,
+        "fields": {
+            "nom_tag": "web"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 4,
+        "fields": {
+            "nom_tag": "programming"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 5,
+        "fields": {
+            "nom_tag": "tutorial"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 1,
+        "fields": {
+            "titol": "First Post",
+            "contingut": "Content of the first post.",
+            "imatge": "posts_images/first_post.jpg",
+            "data_publicacio": "2026-05-24T12:00:00Z",
+            "slug": "first-post",
+            "autor": 1,
+            "tags": [1, 2]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 2,
+        "fields": {
+            "titol": "Second Post",
+            "contingut": "Content of the second post.",
+            "imatge": "posts_images/second_post.jpg",
+            "data_publicacio": "2026-05-24T12:05:00Z",
+            "slug": "second-post",
+            "autor": 2,
+            "tags": [2, 3]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 3,
+        "fields": {
+            "titol": "Third Post",
+            "contingut": "Content of the third post.",
+            "imatge": "posts_images/third_post.jpg",
+            "data_publicacio": "2026-05-24T12:10:00Z",
+            "slug": "third-post",
+            "autor": 3,
+            "tags": [3, 4]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 4,
+        "fields": {
+            "titol": "Fourth Post",
+            "contingut": "Content of the fourth post.",
+            "imatge": "posts_images/fourth_post.jpg",
+            "data_publicacio": "2026-05-24T12:15:00Z",
+            "slug": "fourth-post",
+            "autor": 4,
+            "tags": [4, 5]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 5,
+        "fields": {
+            "titol": "Fifth Post",
+            "contingut": "Content of the fifth post.",
+            "imatge": "posts_images/fifth_post.jpg",
+            "data_publicacio": "2026-05-24T12:20:00Z",
+            "slug": "fifth-post",
+            "autor": 5,
+            "tags": [5, 1]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 6,
+        "fields": {
+            "titol": "Sixth Post",
+            "contingut": "Content of the sixth post.",
+            "imatge": "posts_images/sixth_post.jpg",
+            "data_publicacio": "2026-05-24T12:25:00Z",
+            "slug": "sixth-post",
+            "autor": 1,
+            "tags": [1, 3]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 7,
+        "fields": {
+            "titol": "Seventh Post",
+            "contingut": "Content of the seventh post.",
+            "imatge": "posts_images/seventh_post.jpg",
+            "data_publicacio": "2026-05-24T12:30:00Z",
+            "slug": "seventh-post",
+            "autor": 2,
+            "tags": [2, 4]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 8,
+        "fields": {
+            "titol": "Eighth Post",
+            "contingut": "Content of the eighth post.",
+            "imatge": "posts_images/eighth_post.jpg",
+            "data_publicacio": "2026-05-24T12:35:00Z",
+            "slug": "eighth-post",
+            "autor": 3,
+            "tags": [3, 5]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 9,
+        "fields": {
+            "titol": "Ninth Post",
+            "contingut": "Content of the ninth post.",
+            "imatge": "posts_images/ninth_post.jpg",
+            "data_publicacio": "2026-05-24T12:40:00Z",
+            "slug": "ninth-post",
+            "autor": 4,
+            "tags": [4, 1]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 10,
+        "fields": {
+            "titol": "Tenth Post",
+            "contingut": "Content of the tenth post.",
+            "imatge": "posts_images/tenth_post.jpg",
+            "data_publicacio": "2026-05-24T12:45:00Z",
+            "slug": "tenth-post",
+            "autor": 5,
+            "tags": [5, 2]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 11,
+        "fields": {
+            "titol": "Eleventh Post",
+            "contingut": "Content of the eleventh post.",
+            "imatge": "posts_images/eleventh_post.jpg",
+            "data_publicacio": "2026-05-24T12:50:00Z",
+            "slug": "eleventh-post",
+            "autor": 1,
+            "tags": [1, 4]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 12,
+        "fields": {
+            "titol": "Twelfth Post",
+            "contingut": "Content of the twelfth post.",
+            "imatge": "posts_images/twelfth_post.jpg",
+            "data_publicacio": "2026-05-24T12:55:00Z",
+            "slug": "twelfth-post",
+            "autor": 2,
+            "tags": [2, 5]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 13,
+        "fields": {
+            "titol": "Thirteenth Post",
+            "contingut": "Content of the thirteenth post.",
+            "imatge": "posts_images/thirteenth_post.jpg",
+            "data_publicacio": "2026-05-24T13:00:00Z",
+            "slug": "thirteenth-post",
+            "autor": 3,
+            "tags": [3, 1]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 14,
+        "fields": {
+            "titol": "Fourteenth Post",
+            "contingut": "Content of the fourteenth post.",
+            "imatge": "posts_images/fourteenth_post.jpg",
+            "data_publicacio": "2026-05-24T13:05:00Z",
+            "slug": "fourteenth-post",
+            "autor": 4,
+            "tags": [4, 2]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 15,
+        "fields": {
+            "titol": "Fifteenth Post",
+            "contingut": "Content of the fifteenth post.",
+            "imatge": "posts_images/fifteenth_post.jpg",
+            "data_publicacio": "2026-05-24T13:10:00Z",
+            "slug": "fifteenth-post",
+            "autor": 5,
+            "tags": [5, 3]
+        }
+    }
+]

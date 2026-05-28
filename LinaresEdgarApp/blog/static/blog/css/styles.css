@@ -59,21 +59,21 @@ body {
 .main-info{
     text-align: center;
 }
-
+/* ==========================================================================
+   CONTENIDO PRINCIPAL (POSTS)
+   ========================================================================== */
 .last-posts {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
     text-align: left;
 }
-
 .posts-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;   
     gap: 20px;           
 }
-
 .post-preview {
     padding: 20px;
     border-radius: 8px;
@@ -81,11 +81,9 @@ body {
     box-shadow: 0 4px 12px rgb(199, 198, 198);
 
 }
-
 .post-preview h3 {
     margin-top: 0;
 }
-
 .preview-image {
     width: 120px;
     height: 120px;
@@ -102,31 +100,24 @@ body {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-
 .detailed-post {
     max-width: 800px; 
     margin: 30px auto;
     box-shadow: 0 4px 12px rgb(199, 198, 198);
 
 }
-
-/* Zona del texto */
 .detail-body {
     padding: 20px;
 }
-
 .detail-body h1 {
     margin-top: 0;
 }
-
 .post-date {
     color: #888888;
 }
-
 .post-text {
     line-height: 1.5;
 }
-
 .post-link {
     text-decoration: none;
     color: black;
@@ -134,33 +125,114 @@ body {
     width: calc(20% - 16px); 
     min-width: 190px;
 }
-
-.error-container {
-    display: flex;
-    flex-direction: column;   /* Alinea los elementos uno debajo de otro */
-    align-items: center;      /* Centra horizontalmente todo el contenido */
-    justify-content: center;   /* Centra verticalmente si es necesario */
-    text-align: center;       /* Centra los textos internamente */
-    padding: 60px 20px;       /* Margen interno arriba/abajo y a los lados */
-    max-width: 600px;         /* Limita el ancho del texto para que se lea bien */
-    margin: 40px auto;        /* Centra todo el bloque entero en la pantalla */
+/* ==========================================================================
+   CONTENIDO PRINCIPAL (AUTORES)
+   ========================================================================== */
+.table-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
 }
 
-.error-container h1 {
-    font-size: 5rem;          /* Un tamaño grande e impactante */
-    color: #4c1d95;           /* Tu color morado corporativo */
-    margin-bottom: 10px;
+.table-title {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
-.error-container p {
-    font-size: 1.2rem;
-    color: #555555;           /* Gris oscuro elegante para el subtítulo */
-    margin-bottom: 25px;
+.autors-table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.autors-table thead th {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    padding: 12px 15px;
+    border-bottom: 2px solid black;
+}
+
+.autors-table tbody td {
+    padding: 14px 15px;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.autors-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.action-cell {
+    text-align: right;
+    width: 150px;
+}
+
+.btn-saberne {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-saberne:hover {
+    background-color: #0056b3; 
+}
+
+.empty-row {
+    text-align: center;
+    color: #666666;
+    font-style: italic;
+    padding: 20px !important;
+}
+/* ==========================================================================
+   CONTENIDO PRINCIPAL (TAGS)
+   ========================================================================== */
+.tags {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tags h1 {
+    font-size: 1.5rem; 
+    color: #333333;
+    margin-bottom: 12px;
+}
+.tags a {
+    text-decoration: none;
+}
+.tag:hover {
+    background-color: #666666;
+}
+.tag {
+    display: inline-block;       
+    background-color: #888888;     
+    color: white;                
+    padding: 10px 14px;              
+    border-radius: 4px;             
+    font-size: 0.9rem;
+    margin-right: 8px;              
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.tag-return {
+    color: black;
 }
 
 /* ==========================================================================
    PIE DE PÁGINA (INFORMACIÓN INFERIOR)
    ========================================================================== */
+
 .main-footer {
     background-color: rgb(73, 73, 73);
     color: white;

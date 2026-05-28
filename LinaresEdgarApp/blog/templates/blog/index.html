@@ -15,11 +15,11 @@
             {% for post in posts %}
                     <a href="{% url 'post-detail' post.slug %}" class="post-link">
                         <div class="post-preview">
-                            {% if post.image %}
-                                <img src="{{post.image.url}}" alt="{{post.title}}" class="preview-image">
+                            {% if post.imatge %}
+                                <img src="{{post.imatge.url}}" alt="{{post.titol}}" class="preview-image">
                             {% endif %}
-                            <h3>{{post.title}}</h3>
-                            <p>{{post.content|truncatechars:100}}</p>
+                            <h3>{{post.titol}}</h3>
+                            <p>{{post.contingut|truncatechars:100}}</p>
                         </div>
                     </a>
             {% endfor %}
