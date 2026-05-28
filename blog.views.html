@@ -16,24 +16,28 @@
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
     
 <tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><dl><dt><a name="-post_detail"><strong>post_detail</strong></a>(request, slug)</dt><dd><span class="code">Mostra&nbsp;el&nbsp;contingut&nbsp;detallat&nbsp;d'un&nbsp;post&nbsp;específic&nbsp;segons&nbsp;el&nbsp;seu&nbsp;slug.<br>
+<td class="singlecolumn"><dl><dt><a name="-author_detail"><strong>author_detail</strong></a>(request, id)</dt></dl>
+ <dl><dt><a name="-authors_list"><strong>authors_list</strong></a>(request)</dt></dl>
+ <dl><dt><a name="-post_detail"><strong>post_detail</strong></a>(request, slug)</dt><dd><span class="code">Mostra&nbsp;el&nbsp;contingut&nbsp;detallat&nbsp;d'un&nbsp;post&nbsp;específic&nbsp;segons&nbsp;el&nbsp;seu&nbsp;slug.<br>
 &nbsp;<br>
-Atributs:<br>
+Args:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;slug&nbsp;(str):&nbsp;L'identificador&nbsp;únic&nbsp;del&nbsp;post&nbsp;que&nbsp;es&nbsp;vol&nbsp;visualitzar.<br>
-Retorna:<br>
+Returns:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;post_detail.html&nbsp;amb&nbsp;les&nbsp;dades&nbsp;del&nbsp;post.</span></dd></dl>
  <dl><dt><a name="-posts"><strong>posts</strong></a>(request)</dt><dd><span class="code">Mostra&nbsp;un&nbsp;llistat&nbsp;complet&nbsp;de&nbsp;totes&nbsp;les&nbsp;publicacions&nbsp;del&nbsp;blog.<br>
 &nbsp;<br>
-Atributs:<br>
+Args:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
-Retorna:<br>
+Returns:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;posts.html&nbsp;amb&nbsp;tots&nbsp;els&nbsp;objectes&nbsp;Posts.</span></dd></dl>
  <dl><dt><a name="-starting_page"><strong>starting_page</strong></a>(request)</dt><dd><span class="code">Renderitza&nbsp;la&nbsp;pàgina&nbsp;principal&nbsp;amb&nbsp;els&nbsp;darrers&nbsp;tres&nbsp;posts&nbsp;publicats.<br>
 &nbsp;<br>
-Atributs:<br>
+Args:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
-Retorna:<br>
+Returns:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;index.html&nbsp;amb&nbsp;el&nbsp;context&nbsp;dels&nbsp;posts&nbsp;recents.</span></dd></dl>
+ <dl><dt><a name="-tag_detail"><strong>tag_detail</strong></a>(request, id)</dt></dl>
+ <dl><dt><a name="-tag_list"><strong>tag_list</strong></a>(request)</dt></dl>
 </td></tr></table>
 </body></html>
