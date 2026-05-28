@@ -16,8 +16,19 @@
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
     
 <tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><dl><dt><a name="-author_detail"><strong>author_detail</strong></a>(request, id)</dt></dl>
- <dl><dt><a name="-authors_list"><strong>authors_list</strong></a>(request)</dt></dl>
+<td class="singlecolumn"><dl><dt><a name="-author_detail"><strong>author_detail</strong></a>(request, id)</dt><dd><span class="code">Mostra&nbsp;els&nbsp;detalls&nbsp;d'un&nbsp;autor&nbsp;específic&nbsp;segons&nbsp;el&nbsp;seu&nbsp;identificador.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;(int):&nbsp;L'identificador&nbsp;únic&nbsp;de&nbsp;l'autor.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;autor_detail.html&nbsp;amb&nbsp;les&nbsp;dades&nbsp;de&nbsp;l'autor.</span></dd></dl>
+ <dl><dt><a name="-authors_list"><strong>authors_list</strong></a>(request)</dt><dd><span class="code">Mostra&nbsp;un&nbsp;llistat&nbsp;complet&nbsp;de&nbsp;tots&nbsp;els&nbsp;autors&nbsp;registrats&nbsp;al&nbsp;blog.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;autors.html&nbsp;amb&nbsp;totes&nbsp;les&nbsp;dades&nbsp;de&nbsp;Autor.</span></dd></dl>
  <dl><dt><a name="-post_detail"><strong>post_detail</strong></a>(request, slug)</dt><dd><span class="code">Mostra&nbsp;el&nbsp;contingut&nbsp;detallat&nbsp;d'un&nbsp;post&nbsp;específic&nbsp;segons&nbsp;el&nbsp;seu&nbsp;slug.<br>
 &nbsp;<br>
 Args:<br>
@@ -37,7 +48,18 @@ Args:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
 Returns:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;index.html&nbsp;amb&nbsp;el&nbsp;context&nbsp;dels&nbsp;posts&nbsp;recents.</span></dd></dl>
- <dl><dt><a name="-tag_detail"><strong>tag_detail</strong></a>(request, id)</dt></dl>
- <dl><dt><a name="-tag_list"><strong>tag_list</strong></a>(request)</dt></dl>
+ <dl><dt><a name="-tag_detail"><strong>tag_detail</strong></a>(request, id)</dt><dd><span class="code">Mostra&nbsp;el&nbsp;detall&nbsp;d'una&nbsp;etiqueta&nbsp;específica&nbsp;segons&nbsp;el&nbsp;seu&nbsp;identificador.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;(int):&nbsp;L'identificador&nbsp;únic&nbsp;(clau&nbsp;primària)&nbsp;de&nbsp;l'etiqueta.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;tag_detail.html&nbsp;amb&nbsp;les&nbsp;dades&nbsp;de&nbsp;l'etiqueta.</span></dd></dl>
+ <dl><dt><a name="-tag_list"><strong>tag_list</strong></a>(request)</dt><dd><span class="code">Mostra&nbsp;un&nbsp;llistat&nbsp;de&nbsp;totes&nbsp;les&nbsp;etiquetes&nbsp;(tags)&nbsp;utilitzades&nbsp;al&nbsp;blog.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;L'objecte&nbsp;de&nbsp;la&nbsp;petició&nbsp;de&nbsp;Django.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;La&nbsp;pàgina&nbsp;tags.html&nbsp;amb&nbsp;tots&nbsp;els&nbsp;objectes&nbsp;Tag.</span></dd></dl>
 </td></tr></table>
 </body></html>
